@@ -24,28 +24,7 @@ A machine learning-based Email Spam Detector that classifies incoming emails as 
 
 ---
 
-## 📁 Project Structure
 
-```
-email-spam-detector/
-│
-├── data/
-│   └── emails.csv                  # Cleaned and labeled dataset
-│
-├── models/
-│   └── spam_classifier.pkl         # Exported trained model
-│
-├── app/
-│   └── streamlit_app.py            # Streamlit web interface
-│
-├── src/
-│   ├── preprocess.py               # Text preprocessing functions
-│   ├── feature_extraction.py       # TF-IDF or CountVectorizer logic
-│   └── model_training.py           # ML model training and evaluation
-│
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project documentation
-└── spam_detector.py                # Email classification script
 ```
 
 ---
@@ -142,16 +121,6 @@ model = joblib.load('models/spam_classifier.pkl')
 ```
 
 ---
-
-## 📬 Integration
-
-To integrate this with an email system (like Outlook or Gmail via APIs), use the `spam_detector.py` script to classify incoming emails and move them to folders accordingly.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
